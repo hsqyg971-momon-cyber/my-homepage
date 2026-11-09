@@ -223,3 +223,97 @@ a:hover {
     padding: 36px 0;
   }
 }
+
+/* --- ゲーム表示セクションのスタイル --- */
+.game-card {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 24px;
+}
+
+.game-header {
+  margin-bottom: 20px;
+}
+
+.game-header h3 {
+  font-size: 1.35rem;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.game-header p {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* iframe のレスポンシブ枠（アスペクト比を保ちつつ収める） */
+.game-frame-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 520px;       /* ゲーム画面の最大幅に合わせて調整可能 */
+  margin: 0 auto 20px;
+  background-color: #0f172a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e2e8f0;
+}
+
+.game-frame-wrapper iframe {
+  width: 100%;
+  height: 580px;          /* ゲームの縦横比に合わせて高さを確保 */
+  border: none;
+  display: block;
+}
+
+/* ボタン群の配置 */
+.game-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 9px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: #dbeafe;
+}
+
+.btn-subtle {
+  display: inline-block;
+  padding: 9px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #64748b;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-subtle:hover {
+  background-color: #f1f5f9;
+  color: #334155;
+}
+
+/* スマホ表示時の高さ調整 */
+@media (max-width: 600px) {
+  .game-card {
+    padding: 16px;
+  }
+  .game-frame-wrapper iframe {
+    height: 480px; /* スマホ画面の縦幅に合わせて最適化 */
+  }
+}
