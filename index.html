@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <!-- スクロール固定用の背景画像 -->
+  <div class="fixed-bg"></div>
+
   <!-- ヘッダー -->
   <header class="site-header">
     <div class="container">
@@ -15,6 +18,7 @@
       <nav class="nav">
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#game">Game</a></li>
           <li><a href="#works">Works</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -22,14 +26,9 @@
     </div>
   </header>
 
-<!-- ヒーローセクション -->
+  <!-- ヒーローセクション -->
   <section class="hero">
     <div class="container hero-content">
-      <!-- ▼ ここに画像を追加 ▼ -->
-      <div class="hero-image-box">
-        <img src="hero.jpg" alt="フクロモモンガと巫女のイラスト" class="hero-img">
-      </div>
-      <!-- ▲ ここまで ▲ -->
       <h2>Welcome to My Website</h2>
       <p>制作物や趣味、活動記録をまとめている個人ページです。</p>
     </div>
@@ -51,74 +50,69 @@
       </div>
     </section>
 
+    <!-- 自作ゲーム埋め込みセクション -->
+    <section id="game" class="section">
+      <h2 class="section-title">Sugar Glider Game</h2>
+      <div class="card game-card">
+        <div class="game-header">
+          <h3>フクロモモンガ アクションゲーム</h3>
+          <p>画面内で直接遊べます。全画面で遊ぶ場合は下のボタンを押してください。</p>
+        </div>
+
+        <div class="game-frame-wrapper">
+          <iframe 
+            src="https://hsqyg971-momon-cyber.github.io/sugerG/" 
+            title="Sugar Glider Game"
+            allow="fullscreen"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="game-actions">
+          <a href="https://hsqyg971-momon-cyber.github.io/sugerG/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            別タブで大きく遊ぶ ↗
+          </a>
+          <a href="https://github.com/hsqyg971-momon-cyber/sugerG" target="_blank" rel="noopener noreferrer" class="btn btn-subtle">
+            GitHubリポジトリを見る
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- 作品・コンテンツ一覧 -->
     <section id="works" class="section">
       <h2 class="section-title">Works & Contents</h2>
       <div class="grid">
         <article class="card work-card">
           <div class="card-badge">Web / Game</div>
-          <h3>自作アプリ・ゲーム</h3>
-          <p>HTML5 CanvasやJavaScriptを活用して作成したミニゲームや動的ツールを公開しています。</p>
-          <a href="#" class="btn">詳しく見る</a>
+          <h3>Canvas ミニゲーム集</h3>
+          <p>HTML5 CanvasやJavaScriptを活用したゲームや動的ツールの開発記録です。</p>
+          <a href="#game" class="btn">ゲームを遊ぶ</a>
         </article>
 
-<!-- 自作ゲーム埋め込みセクション -->
-<section id="game-section" class="section">
-  <div class="container">
-    <h2 class="section-title">Sugar Glider Game</h2>
-    
-    <div class="card game-card">
-      <div class="game-header">
-        <h3>フクロモモンガ アクションゲーム</h3>
-        <p>画面内で直接そのまま遊べます。全画面や別タブで遊ぶ場合は下のボタンを押してください。</p>
-      </div>
-
-      <!-- ゲームを埋め込むレスポンシブ枠 -->
-      <div class="game-frame-wrapper">
-        <iframe 
-          src="https://hsqyg971-momon-cyber.github.io/sugerG/" 
-          title="Sugar Glider Game"
-          allow="fullscreen"
-          loading="lazy">
-        </iframe>
-      </div>
-
-      <!-- 補助ボタン・リンク -->
-      <div class="game-actions">
-        <a href="https://hsqyg971-momon-cyber.github.io/sugerG/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-          別タブで大きく遊ぶ ↗
-        </a>
-        <a href="https://github.com/hsqyg971-momon-cyber/sugerG" target="_blank" rel="noopener noreferrer" class="btn btn-subtle">
-          GitHubリポジトリを見る
-        </a>
-      </div>
-    </div>
-  </div>
-</section>        
-        
         <article class="card work-card">
           <div class="card-badge">Gallery</div>
-          <h3>イラスト・創作ギャラリー</h3>
-          <p>制作したデジタルアートやイラスト作品、グラフィック素材の記録・まとめです。</p>
+          <h3>創作ギャラリー</h3>
+          <p>制作したデジタルアートやイラスト作品、グラフィック素材のまとめです。</p>
           <a href="#" class="btn">ギャラリーへ</a>
         </article>
 
         <article class="card work-card">
           <div class="card-badge">Hobby</div>
           <h3>日々の活動・趣味</h3>
-          <p>読書記録、趣味の情報、お気に入りのモノなどを随時発信・更新しています。</p>
+          <p>読書記録、趣味の情報、お気に入りのモノなどを随時更新しています。</p>
           <a href="#" class="btn">記事を読む</a>
         </article>
       </div>
     </section>
 
-    <!-- お問い合わせ・リンク -->
+    <!-- リンク集 -->
     <section id="contact" class="section">
       <h2 class="section-title">Contact & Links</h2>
       <div class="card contact-card">
-        <p>各種SNSや外部サービスのアカウントはこちらです。</p>
+        <p>各種外部サービスのアカウント・リンクです。</p>
         <div class="link-buttons">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub</a>
+          <a href="https://github.com/hsqyg971-momon-cyber" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub</a>
           <a href="#" class="link-btn">Twitter / X</a>
           <a href="#" class="link-btn">Blog</a>
         </div>
