@@ -86,6 +86,21 @@ a:hover {
   color: #cbd5e1;
 }
 
+/* ヒーローセクション内の画像枠 */
+.hero-image-box {
+  max-width: 420px;          /* パソコン表示時の最大幅 */
+  margin: 0 auto 24px;       /* 中央配置＆文字との余白 */
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;       /* 角を丸く */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* 立体感のある影 */
+  border: 2px solid rgba(255, 255, 255, 0.15); /* さりげない白枠 */
+}
+
 /* セクション共通 */
 .section {
   padding: 50px 0;
