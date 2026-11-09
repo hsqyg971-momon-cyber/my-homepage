@@ -23,7 +23,7 @@ a:hover {
   opacity: 0.8;
 }
 
-/* スクロール固定背景画像（横幅を広げつつ全体感をキープ） */
+/* スクロール固定背景画像（全体表示＆明るさアップ） */
 .fixed-bg {
   position: fixed;
   top: 0;
@@ -31,13 +31,12 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background-image: url('hero.jpg');
-  /* 横幅を画面幅の約80%〜85%までしっかり広げ、高さは自動計算 */
-  background-size: min(85vw, 110vh) auto;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-size: contain;         /* 画像を切り取らず、全体が必ず画面内に収まるように表示 */
+  background-position: center;      /* 画面中央に配置 */
+  background-repeat: no-repeat;     /* 繰り返しを無効化 */
   z-index: -1;
-  opacity: 0.8;
-  pointer-events: none;
+  opacity: 0.8;                     /* イラストがしっかり視認できる明るさ */
+  pointer-events: none;             /* クリックなどの操作を邪魔しない設定 */
 }
 
 /* レイアウト共通コンテナ */
