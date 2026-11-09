@@ -1,1 +1,98 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>My Site</title></head><body><h1>ホームページへようこそ</h1><p>GitHub Pagesで公開したサイトです。</p></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | ホームページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">My Works & Profile</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Welcome to My Website</h2>
+      <p>日々の制作物や趣味、活動記録をまとめている個人ページです。</p>
+    </div>
+  </section>
+
+  <!-- メインコンテンツ -->
+  <main class="container">
+    <!-- 自己紹介 -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="card profile-card">
+        <div class="profile-info">
+          <h3>プロフィール</h3>
+          <p>
+            Web制作やプログラミング、趣味の創作活動を行っています。<br>
+            このサイトは GitHub Pages を使って完全無料で公開・運営しています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作品・コンテンツ一覧 -->
+    <section id="works" class="section">
+      <h2 class="section-title">Works & Contents</h2>
+      <div class="grid">
+        <article class="card work-card">
+          <div class="card-badge">Web / Game</div>
+          <h3>自作アプリ・ゲーム</h3>
+          <p>HTML5 CanvasやJavaScriptを活用して作成したミニゲームや動的ツールを公開しています。</p>
+          <a href="#" class="btn">詳しく見る</a>
+        </article>
+
+        <article class="card work-card">
+          <div class="card-badge">Gallery</div>
+          <h3>イラスト・創作ギャラリー</h3>
+          <p>制作したデジタルアートやイラスト作品、グラフィック素材の記録・まとめです。</p>
+          <a href="#" class="btn">ギャラリーへ</a>
+        </article>
+
+        <article class="card work-card">
+          <div class="card-badge">Hobby</div>
+          <h3>日々の活動・趣味</h3>
+          <p>読書記録、趣味の情報、お気に入りのモノなどを随時発信・更新しています。</p>
+          <a href="#" class="btn">記事を読む</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- お問い合わせ・リンク -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact & Links</h2>
+      <div class="card contact-card">
+        <p>各種SNSや外部サービスのアカウントはこちらです。</p>
+        <div class="link-buttons">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub</a>
+          <a href="#" class="link-btn">Twitter / X</a>
+          <a href="#" class="link-btn">Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 My Website. Built with GitHub Pages.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
